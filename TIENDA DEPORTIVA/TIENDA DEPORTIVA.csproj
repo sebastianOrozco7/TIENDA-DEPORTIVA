@@ -48,10 +48,16 @@
   <ItemGroup>
     <Compile Include="Controlador\ImplementacionDeportiva.cs" />
     <Compile Include="Controlador\RopaDeportiva.cs" />
-    <Compile Include="VentanaAdministrador.cs">
+    <Compile Include="Vista\VentanaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentanaAdministrador.Designer.cs">
+    <Compile Include="Vista\VentanaCliente.Designer.cs">
+      <DependentUpon>VentanaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VentanaAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VentanaAdministrador.Designer.cs">
       <DependentUpon>VentanaAdministrador.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Form1.cs">
@@ -62,7 +68,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="VentanaAdministrador.resx">
+    <EmbeddedResource Include="Vista\VentanaAdministrador.resx">
       <DependentUpon>VentanaAdministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Form1.resx">

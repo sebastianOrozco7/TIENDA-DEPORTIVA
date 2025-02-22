@@ -22,5 +22,11 @@ namespace TIENDA_DEPORTIVA
             VentanaAdministrador ventanaAdministrador = new VentanaAdministrador();
             ventanaAdministrador.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            VentanaCliente ventanaCliente = new VentanaCliente();
+            ventanaCliente.Show();
+        }
     }
 }

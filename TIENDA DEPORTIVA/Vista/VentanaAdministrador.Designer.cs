@@ -68,6 +68,7 @@
             this.panelImplementacion = new System.Windows.Forms.Panel();
             this.panelEliminar = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
+            this.buttonEnviar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInventarioRopa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInventarioImplementacion)).BeginInit();
             this.panelRopa.SuspendLayout();
@@ -441,11 +442,22 @@
             this.label17.TabIndex = 37;
             this.label17.Text = "ELIMINAR ELEMENTOS";
             // 
+            // buttonEnviar
+            // 
+            this.buttonEnviar.Location = new System.Drawing.Point(749, 282);
+            this.buttonEnviar.Name = "buttonEnviar";
+            this.buttonEnviar.Size = new System.Drawing.Size(123, 43);
+            this.buttonEnviar.TabIndex = 40;
+            this.buttonEnviar.Text = "ENVIAR";
+            this.buttonEnviar.UseVisualStyleBackColor = true;
+            this.buttonEnviar.Click += new System.EventHandler(this.buttonEnviar_Click);
+            // 
             // VentanaAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 450);
+            this.Controls.Add(this.buttonEnviar);
             this.Controls.Add(this.panelEliminar);
             this.Controls.Add(this.panelImplementacion);
             this.Controls.Add(this.panelRopa);
@@ -510,5 +522,6 @@
         private System.Windows.Forms.Panel panelImplementacion;
         private System.Windows.Forms.Panel panelEliminar;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button buttonEnviar;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TIENDA_DEPORTIVA.Controlador
 {
-    internal class RopaDeportiva
+    public class RopaDeportiva
     {
         public int CodigoRef { get; set; }
         public string Prenda {  get; set; }

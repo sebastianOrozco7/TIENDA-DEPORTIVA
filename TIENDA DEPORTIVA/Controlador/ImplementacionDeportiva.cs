@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace TIENDA_DEPORTIVA.Controlador
 {
-    internal class ImplementacionDeportiva
+    public class ImplementacionDeportiva
     {
         public int CodigoRef {  get; set; }
         public string Nombre { get; set; }

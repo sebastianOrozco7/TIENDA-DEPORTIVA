@@ -34,7 +34,6 @@ namespace TIENDA_DEPORTIVA
 
         private void comboBoxAdministrador_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             string OpcionSeleccionada = comboBoxAdministrador.SelectedItem.ToString();
            
             if(OpcionSeleccionada == "Agregar")
@@ -138,6 +137,10 @@ namespace TIENDA_DEPORTIVA
             dataGridViewInventarioRopa.Refresh();
         }
 
-        
+        private void buttonEnviar_Click(object sender, EventArgs e)
+        {
+            VentanaCliente cliente = new VentanaCliente(ListaRopaDeportiva,ListaImplementacionDeportiva);
+            cliente.Show();
+        }
     }
 }

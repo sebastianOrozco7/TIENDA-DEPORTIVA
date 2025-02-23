@@ -37,6 +37,13 @@
             this.dataGridViewRopaCliente = new System.Windows.Forms.DataGridView();
             this.dataGridViewImplementacionCliente = new System.Windows.Forms.DataGridView();
             this.buttonenviarCliente = new System.Windows.Forms.Button();
+            this.buttonEnviarCiente2 = new System.Windows.Forms.Button();
+            this.TotalCompraImplementacion = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxUnidadesCompradasImplementacion = new System.Windows.Forms.TextBox();
+            this.textBoxCodigoProductoImplementacion = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRopaCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewImplementacionCliente)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +72,6 @@
             this.textBoxCodigoProductoRopa.Name = "textBoxCodigoProductoRopa";
             this.textBoxCodigoProductoRopa.Size = new System.Drawing.Size(100, 20);
             this.textBoxCodigoProductoRopa.TabIndex = 2;
-//            this.textBoxCodigoProductoRopa.TextChanged += new System.EventHandler(this.textBoxCodigoProducto_TextChanged);
             // 
             // textBoxUnidadesCompradasRopa
             // 
@@ -95,7 +101,7 @@
             // dataGridViewRopaCliente
             // 
             this.dataGridViewRopaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRopaCliente.Location = new System.Drawing.Point(410, 36);
+            this.dataGridViewRopaCliente.Location = new System.Drawing.Point(411, 15);
             this.dataGridViewRopaCliente.Name = "dataGridViewRopaCliente";
             this.dataGridViewRopaCliente.Size = new System.Drawing.Size(320, 177);
             this.dataGridViewRopaCliente.TabIndex = 6;
@@ -103,7 +109,7 @@
             // dataGridViewImplementacionCliente
             // 
             this.dataGridViewImplementacionCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewImplementacionCliente.Location = new System.Drawing.Point(410, 253);
+            this.dataGridViewImplementacionCliente.Location = new System.Drawing.Point(411, 218);
             this.dataGridViewImplementacionCliente.Name = "dataGridViewImplementacionCliente";
             this.dataGridViewImplementacionCliente.Size = new System.Drawing.Size(320, 173);
             this.dataGridViewImplementacionCliente.TabIndex = 7;
@@ -118,11 +124,78 @@
             this.buttonenviarCliente.UseVisualStyleBackColor = true;
             this.buttonenviarCliente.Click += new System.EventHandler(this.buttonenviarCliente_Click);
             // 
+            // buttonEnviarCiente2
+            // 
+            this.buttonEnviarCiente2.Location = new System.Drawing.Point(109, 324);
+            this.buttonEnviarCiente2.Name = "buttonEnviarCiente2";
+            this.buttonEnviarCiente2.Size = new System.Drawing.Size(75, 23);
+            this.buttonEnviarCiente2.TabIndex = 15;
+            this.buttonEnviarCiente2.Text = "Enviar";
+            this.buttonEnviarCiente2.UseVisualStyleBackColor = true;
+            this.buttonEnviarCiente2.Click += new System.EventHandler(this.buttonEnviarCiente2_Click);
+            // 
+            // TotalCompraImplementacion
+            // 
+            this.TotalCompraImplementacion.AutoSize = true;
+            this.TotalCompraImplementacion.Location = new System.Drawing.Point(185, 367);
+            this.TotalCompraImplementacion.Name = "TotalCompraImplementacion";
+            this.TotalCompraImplementacion.Size = new System.Drawing.Size(25, 13);
+            this.TotalCompraImplementacion.TabIndex = 14;
+            this.TotalCompraImplementacion.Text = "$$$";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(106, 367);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Valor total:";
+            // 
+            // textBoxUnidadesCompradasImplementacion
+            // 
+            this.textBoxUnidadesCompradasImplementacion.Location = new System.Drawing.Point(216, 286);
+            this.textBoxUnidadesCompradasImplementacion.Name = "textBoxUnidadesCompradasImplementacion";
+            this.textBoxUnidadesCompradasImplementacion.Size = new System.Drawing.Size(100, 20);
+            this.textBoxUnidadesCompradasImplementacion.TabIndex = 12;
+            // 
+            // textBoxCodigoProductoImplementacion
+            // 
+            this.textBoxCodigoProductoImplementacion.Location = new System.Drawing.Point(216, 255);
+            this.textBoxCodigoProductoImplementacion.Name = "textBoxCodigoProductoImplementacion";
+            this.textBoxCodigoProductoImplementacion.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCodigoProductoImplementacion.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(106, 293);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Unidades:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(106, 258);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(102, 13);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Codigo del producto";
+            // 
             // VentanaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonEnviarCiente2);
+            this.Controls.Add(this.TotalCompraImplementacion);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBoxUnidadesCompradasImplementacion);
+            this.Controls.Add(this.textBoxCodigoProductoImplementacion);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.buttonenviarCliente);
             this.Controls.Add(this.dataGridViewImplementacionCliente);
             this.Controls.Add(this.dataGridViewRopaCliente);
@@ -152,5 +225,12 @@
         private System.Windows.Forms.DataGridView dataGridViewRopaCliente;
         private System.Windows.Forms.DataGridView dataGridViewImplementacionCliente;
         private System.Windows.Forms.Button buttonenviarCliente;
+        private System.Windows.Forms.Button buttonEnviarCiente2;
+        private System.Windows.Forms.Label TotalCompraImplementacion;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxUnidadesCompradasImplementacion;
+        private System.Windows.Forms.TextBox textBoxCodigoProductoImplementacion;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

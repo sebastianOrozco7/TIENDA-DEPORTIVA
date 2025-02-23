@@ -38,7 +38,7 @@ namespace TIENDA_DEPORTIVA
             dataGridViewImplementacionCliente.DataSource = ListaImplementacionCliente;
         }
 
-        private void BuscarCodigo(int CodigoBuscar)
+        private void BuscarCodigoRopa(int CodigoBuscar)
         {
             RopaDeportiva prenda = ListaRopaDeportivaCliente.Find(p => p.CodigoRef == CodigoBuscar);
 
@@ -57,6 +57,26 @@ namespace TIENDA_DEPORTIVA
             }
         }
 
+        private void BuscarCodigoImplementacion(int CodigoBuscar)
+        {
+            ImplementacionDeportiva Implemento = ListaImplementacionCliente.Find(I => I.CodigoRef == CodigoBuscar);
+
+            if (Implemento != null)
+            {
+                int unidades = Convert.ToInt32(textBoxUnidadesCompradasImplementacion.Text);
+
+                float Total = PrecioTotal(Implemento.Precio, unidades);
+
+                TotalCompraImplementacion.Text = Total.ToString();
+
+            }
+            else
+            {
+                MessageBox.Show("CODIGO DE REFERENCIA DEL PRODUCTO NO ENCONTRADO");
+            }
+        }
+
+
         private float PrecioTotal(float precio, int unidades)
         {
             float Total = precio * unidades;
@@ -68,10 +88,19 @@ namespace TIENDA_DEPORTIVA
         private void buttonenviarCliente_Click(object sender, EventArgs e)
         {
             int CodigoRef = Convert.ToInt32(textBoxCodigoProductoRopa.Text);
-            BuscarCodigo(CodigoRef);
+            BuscarCodigoRopa(CodigoRef);
 
             textBoxCodigoProductoRopa.Clear();
             textBoxUnidadesCompradasRopa.Clear();
+        }
+
+        private void buttonEnviarCiente2_Click(object sender, EventArgs e)
+        {
+            int CodigoRef = Convert.ToInt32(textBoxCodigoProductoImplementacion.Text);
+            BuscarCodigoImplementacion(CodigoRef);
+
+            textBoxCodigoProductoImplementacion.Clear();
+            textBoxUnidadesCompradasImplementacion.Clear();
         }
     }
 }

@@ -77,6 +77,7 @@ namespace TIENDA_DEPORTIVA
 
         private void buttonAgregar2_Click(object sender, EventArgs e)
         {
+            ImplementacionDeportiva implemento = new ImplementacionDeportiva();
             implemento.Nombre = textBoxNombreImplementacion.Text;
             implemento.Marca = textBoxMarcaImplementacion.Text;
             implemento.Material = textBoxMaterialImplementacion.Text;
@@ -92,13 +93,11 @@ namespace TIENDA_DEPORTIVA
             //mensaje para que el administrador vea que se agrego correctamente
             MessageBox.Show("Implemento Agregado Con Exito");
             // Limpiar los campos del formulario después de agregar
-            TexBoxPrendaRopa.Clear();
-            TexBoxMarcaRopa.Clear();
-            TexBoxTallaRopa.Clear();
-            TexBoxColorRopa.Clear();
-            TexBoxPrecioRopa.Clear();
+            textBoxNombreImplementacion.Clear();
+            textBoxMarcaImplementacion.Clear();
+            textBoxMaterialImplementacion.Clear();
+            textBoxPrecioImplementacion.Clear();
             textBoxCodigoImplementacion.Clear();
-
         }
 
         private void buttonEliminarImplemento_Click(object sender, EventArgs e)
@@ -142,5 +141,7 @@ namespace TIENDA_DEPORTIVA
             VentanaCliente cliente = new VentanaCliente(ListaRopaDeportiva,ListaImplementacionDeportiva);
             cliente.Show();
         }
+
+        
     }
 }

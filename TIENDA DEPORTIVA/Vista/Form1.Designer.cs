@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.buttonAdmin = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAdmin
             // 
-            this.buttonAdmin.Location = new System.Drawing.Point(241, 148);
+            this.buttonAdmin.Location = new System.Drawing.Point(341, 152);
             this.buttonAdmin.Name = "buttonAdmin";
             this.buttonAdmin.Size = new System.Drawing.Size(114, 23);
             this.buttonAdmin.TabIndex = 0;
@@ -42,22 +41,11 @@
             this.buttonAdmin.UseVisualStyleBackColor = true;
             this.buttonAdmin.Click += new System.EventHandler(this.buttonAdmin_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(388, 148);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "CLIENTE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonAdmin);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -68,7 +56,6 @@
         #endregion
 
         private System.Windows.Forms.Button buttonAdmin;
-        private System.Windows.Forms.Button button1;
     }
 }
 

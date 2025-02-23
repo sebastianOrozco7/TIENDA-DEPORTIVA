@@ -418,6 +418,7 @@
             this.panelImplementacion.Name = "panelImplementacion";
             this.panelImplementacion.Size = new System.Drawing.Size(200, 215);
             this.panelImplementacion.TabIndex = 38;
+//            this.panelImplementacion.Paint += new System.Windows.Forms.PaintEventHandler(this.panelImplementacion_Paint);
             // 
             // panelEliminar
             // 
